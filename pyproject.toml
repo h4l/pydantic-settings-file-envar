@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pydantic-settings-file-envar"
-version = "0.1.0a1"
+version = "0.1.0"
 repository = "https://github.com/h4l/pydantic-settings-file-envar"
 description = "Load pydantic settings from files named by _FILE suffix environment variables"
 authors = ["Hal Blackburn <hwtb2@cam.ac.uk>"]
