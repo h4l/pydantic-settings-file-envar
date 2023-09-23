@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "pydantic-settings-file-envar"
+version = "0.1.0a0"
+repository = "https://github.com/h4l/pydantic-settings-file-envar"
+description = "A Pydantic SettingsSource for the _FILE suffix environment variable convention"
+authors = ["Hal Blackburn <hwtb2@cam.ac.uk>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic-settings = "^2.0.0"
+exceptiongroup = { version = "^1.1.3", python = "<3.11" }
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+
+[tool.poetry.group.lint.dependencies]
+flake8 = { version = "^6.1.0", python = ">=3.8.1" }
+black = "^23.9.1"
+mypy = "^1.5.1"
+isort = "^5.12.0"
+flake8-pyproject = "^1.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+src_paths = ["."]
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203"
+
+[tool.mypy]
+strict = true

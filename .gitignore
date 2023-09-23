@@ -1,0 +1,5 @@
+.*
+!.devcontainer
+!.git*
+__pycache__
+dist

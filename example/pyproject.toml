@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "file-envar-example"
+version = "0.1.0"
+description = ""
+authors = ["Hal Blackburn <hwtb2@cam.ac.uk>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+file-envar-example = "file_envar_example:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic-settings = "^2.0.3"
+pydantic-settings-file-envar = "^0.1.0"
+
+[tool.poetry.group.local.dependencies]
+pydantic-settings-file-envar = { path = ".." }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
