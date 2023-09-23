@@ -165,8 +165,8 @@ python-dotenv = ">=0.21.0"
 
 [[package]]
 name = "pydantic-settings-file-envar"
-version = "0.1.0"
-description = "A Pydantic SettingsSource for the _FILE suffix environment variable convention"
+version = "0.1.0a0"
+description = "Load pydantic settings from files named by _FILE suffix environment variables"
 optional = false
 python-versions = "^3.8"
 files = []
@@ -207,4 +207,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "973054c9c130f53af89c66f48ecd37857f406be2557628f88b13ad62d7ab3a62"
+content-hash = "cca37df5b76beedf83be6f5e0df7384059b98fa86837552ba2b92adb13e025af"
